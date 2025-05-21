@@ -1,0 +1,76 @@
+htlm, body {}
+
+header h1{
+    margin: 0;
+    font-weight: normal;
+    font-size: 6rem;
+}
+
+
+header h2 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 3rem;
+}
+
+
+
+
+header:before {
+    content: "";
+    height: 15px;
+    background: linear-gradient(to left, rgb(145,22,147),rgb(196,116,197))
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0
+}
+
+
+
+
+
+
+
+
+
+
+
+
+main {
+    max-with: 700px;
+    margin: 0 auto ;
+}
+
+main article {
+    backgound-color: #ffffff;
+    display: flex;
+    flex-direction: row-reverse;
+    border-radius: 20 px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+
+
+.animal-card-text{
+    background-color: #911693
+    padding: 1rem 1.5rem;
+
+}
+
+.animal-card-photo{
+    min-width : 200px; 
+    overflow: hidden
+}
+
+.animal-card-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+main article:hover img{
+    transform: rotate(10deg) scale ( 1.4)
+}
